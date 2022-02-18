@@ -257,7 +257,7 @@ int main() {
     std::vector <edge_pair> orthogonal_pairs;
     SurfaceMesh *mesh2 = new SurfaceMesh;
     std::vector <SurfaceMesh::Vertex> new_vts, test;
-    std::string model_name = "../data/model1.obj";
+    std::string model_name = std::string(DATA_DIR) + "/model1.obj";
 
 
     SurfaceMesh *mesh = SurfaceMeshIO::load(model_name);
